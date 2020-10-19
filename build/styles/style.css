@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1000px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "OpenSans", sans-serif;
+  color: #000000;
+  overflow-x: hidden; }
+  body.modal-active {
+    overflow: hidden; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+button {
+  cursor: pointer; }
+
+.container {
+  margin: 0 165px; }
+
+.header {
+  background-color: #f6f2f2;
+  padding-top: 30px; }
+  .header__nav {
+    background-color: rgba(0, 0, 0, 0.8); }
+    .header__nav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 380px; }
+      .header__nav-list-item {
+        color: #e0e0e0;
+        text-transform: uppercase;
+        padding: 44px 24px;
+        font-size: 14px; }
+        .header__nav-list-item:hover {
+          background-color: #ff3f40; }
+
+@font-face {
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"); }
+
+@font-face {
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Italic.woff") format("woff"); }
+
+@font-face {
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"); }
+
+@font-face {
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-ExtraBold.woff") format("woff"); }
+
+.main {
+  background-color: #f6f2f2;
+  display: flex;
+  padding-top: 103px;
+  padding-bottom: 111px; }
+  .main__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 588px;
+    margin-right: 106px; }
+    .main__inner-headline {
+      margin: 0;
+      padding-bottom: 36px;
+      font-size: 60px;
+      font-weight: 900;
+      text-transform: uppercase; }
+    .main__inner-desc {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.8);
+      padding: 0 75px 58px 0; }
+  .main__video {
+    width: 550px;
+    height: 356px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); }
+
+.btn {
+  background-color: #ff2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700; }
+  .btn-main {
+    padding: 20px 63px; }
+  .btn-services {
+    padding: 20px 60px; }
+
+.services {
+  padding: 114px 0 107px 0;
+  display: flex; }
+  .services__introduce {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; }
+    .services__introduce-headline {
+      margin: 0;
+      font-size: 42px;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 700;
+      text-transform: uppercase; }
+    .services__introduce-desc {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.8); }

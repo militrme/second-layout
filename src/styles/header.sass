@@ -1,0 +1,22 @@
+.header 
+    background-color: #f6f2f2
+    padding-top: 30px
+
+    &__nav
+        background-color: rgba(0, 0, 0, 0.8)
+
+        &-list 
+            @include reset-list
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            padding: 0 380px
+
+            &-item
+                color: #e0e0e0 
+                text-transform: uppercase
+                padding: 44px 24px
+                font-size: 14px
+
+                &:hover
+                    background-color: $hover-color

@@ -1,0 +1,28 @@
+.main
+    background-color: #f6f2f2
+    display: flex
+    padding-top: 103px
+    padding-bottom: 111px
+
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        max-width: 588px
+        margin-right: 106px
+
+        &-headline
+            margin: 0
+            padding-bottom: 36px
+            font-size: 60px
+            font-weight: 900
+            text-transform: uppercase
+
+        &-desc
+            @include desc
+            padding: 0 75px 58px 0
+
+    &__video
+        width: 550px
+        height: 356px
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2)

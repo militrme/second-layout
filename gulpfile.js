@@ -17,7 +17,7 @@ var gulp = require('gulp'),
     server = require('browser-sync').create();
 
 gulp.task('style', function() {
-  return gulp.src('src/styles/style.scss')
+  return gulp.src('src/styles/style.sass')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer())
@@ -57,7 +57,7 @@ gulp.task('copyfonts', function(){
 gulp.task('serve', function() {
     gulp.watch('src/script/*.js', gulp.series('minjs'));
   
-    gulp.watch('src/styles/**/*.scss', gulp.series('style'));
+    gulp.watch('src/styles/**/*.sass', gulp.series('style'));
   
     gulp.watch('src/index.html', gulp.series('minhtml'));
 
