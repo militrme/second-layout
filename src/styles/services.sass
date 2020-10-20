@@ -1,14 +1,55 @@
 .services
-    padding: 114px 0 107px 0
+    padding: 104px 0 107px 0
     display: flex
 
     &__introduce
         display: flex
         flex-direction: column
         align-items: baseline
+        max-width: 509px
 
         &-headline
             @include headlines
+            padding-bottom: 50px
 
         &-desc
             @include desc
+            padding-bottom: 58px
+
+    &__list
+        @include reset-list
+        display: flex
+        flex-wrap: wrap
+        max-width: 610px
+
+        &-item
+            background: url("../img/services-sprite.png") no-repeat
+            padding: 72px 0 76px 0
+            margin-right: 50px
+            width: 270px
+
+            &:nth-child(2n)
+                margin-right: 0
+
+            &--settings
+                background-position: 0 9px
+
+            &--ux
+                background-position: -320px 9px
+
+            &--branding
+                background-position: 0 -257px
+
+            &--animation
+                background-position: -320px -257px
+
+            &-headline
+                color: $desc-color
+                font-size: 24px
+                margin: 0
+
+            &-desc
+                font-size: 16px
+                color: $desc-color
+                text-align: left
+                line-height: 28px
