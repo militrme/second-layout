@@ -39,6 +39,11 @@ button {
   display: flex;
   justify-content: space-between; }
 
+.border-bottom {
+  width: 135px;
+  border-bottom: 1px solid #ff2d2d;
+  align-self: center; }
+
 .header {
   background-color: #f6f2f2;
   padding-top: 30px; }
@@ -145,6 +150,9 @@ button {
   .btn-main {
     padding: 20px 63px; }
   .btn-services {
+    color: #ff2d2d;
+    background-color: #fff;
+    border: 1px solid #ff2d2d;
     padding: 20px 60px; }
 
 .services {
@@ -154,19 +162,19 @@ button {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    max-width: 509px; }
+    max-width: 510px; }
     .services__introduce-headline {
       margin: 0;
       font-size: 42px;
       color: rgba(0, 0, 0, 0.8);
       font-weight: 700;
       text-transform: uppercase;
-      padding-bottom: 50px; }
+      padding-bottom: 30px; }
     .services__introduce-desc {
       font-size: 16px;
       color: rgba(0, 0, 0, 0.8);
       line-height: 28px;
-      padding-bottom: 58px; }
+      padding-bottom: 47px; }
   .services__list {
     margin: 0;
     padding: 0;
@@ -176,7 +184,7 @@ button {
     max-width: 610px; }
     .services__list-item {
       background: url("../img/services-sprite.png") no-repeat;
-      padding: 72px 0 76px 0;
+      padding: 72px 0 50px 0;
       margin-right: 50px;
       width: 270px; }
       .services__list-item:nth-child(2n) {
@@ -186,9 +194,9 @@ button {
       .services__list-item--ux {
         background-position: -320px 9px; }
       .services__list-item--branding {
-        background-position: 0 -280px; }
+        background-position: 0 -260px; }
       .services__list-item--animation {
-        background-position: -320px -280px; }
+        background-position: -320px -260px; }
       .services__list-item-headline {
         color: rgba(0, 0, 0, 0.7);
         font-size: 24px;
@@ -198,3 +206,53 @@ button {
         color: rgba(0, 0, 0, 0.7);
         text-align: left;
         line-height: 28px; }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 0; }
+  .features__headline {
+    margin: 0;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 14px; }
+  .features__desc {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 28px;
+    text-align: center;
+    align-self: center;
+    width: 504px;
+    margin-bottom: 25px; }
+  .features__titles {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 82px 200px 57px;
+    font-size: 22px;
+    text-transform: uppercase; }
+    .features__titles-item {
+      letter-spacing: 0.22px;
+      opacity: 0.7;
+      transition: ease-in-out 0.3s;
+      font-weight: 700; }
+      .features__titles-item:hover {
+        color: #ff3f40;
+        opacity: 1;
+        transition: ease-in-out 0.3s; }
+  .features__works {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1252px; }
+    .features__works-item {
+      width: 300px;
+      margin-bottom: 20px; }

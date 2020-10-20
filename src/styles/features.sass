@@ -1,0 +1,46 @@
+.features
+    display: flex
+    flex-direction: column
+    padding: 48px 0 0
+
+    &__headline
+        @include headlines
+        text-align: center
+        padding-bottom: 14px
+
+    &__desc
+        @include desc
+        text-align: center
+        align-self: center
+        width: 504px
+        margin-bottom: 25px
+
+    &__titles
+        @include reset-list
+        display: flex
+        justify-content: space-between
+        padding: 82px 200px 57px
+        font-size: 22px
+        text-transform: uppercase
+
+        &-item
+            letter-spacing: 0.22px
+            opacity: 0.7
+            transition: ease-in-out 0.3s
+            font-weight: 700
+
+            &:hover
+                color: $hover-color
+                opacity: 1
+                transition: ease-in-out 0.3s
+
+    &__works
+        @include reset-list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 1252px
+
+        &-item
+            width: 300px
+            margin-bottom: 20px
