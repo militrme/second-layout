@@ -394,6 +394,7 @@ button {
 
 .slider {
   display: flex;
+  flex-direction: row;
   padding: 70px 0 0 0; }
   .slider-item {
     display: flex; }
