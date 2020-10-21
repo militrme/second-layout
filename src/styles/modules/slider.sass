@@ -1,0 +1,55 @@
+.slider
+    display: flex
+    padding: 70px 0 0 0
+
+    &-item
+        display: flex
+
+        &__img
+            width: 320px
+            height: 460px
+
+        &__info
+            display: flex
+            flex-direction: column
+            padding: 0 0 0 74px
+
+            &-name
+                font-size: 30px
+                color: rgba(0, 0, 0, 0.8)
+                text-transform: uppercase
+                font-weight: 700
+
+            &-desc
+                @include desc
+                max-width: 631px
+                padding: 35px 0 44px 0
+
+            &-list
+                @include reset-list
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                max-width: 375px
+
+                &-item
+                    font-size: 18px
+                    font-style: italic
+                    font-weight: 700
+                    color: $desc-color
+                    letter-spacing: 0.9px
+
+    &__buttons
+        @include reset-list
+        width: 820px
+        height: 215px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 67px 0 0 0
+
+        &-item
+            border: none
+            background: url("../img/slider-mini-photo.png")
+            width: 197px
+            height: 192px

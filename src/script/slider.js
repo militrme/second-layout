@@ -1,16 +1,16 @@
-$('.slider-for').slick({
+$('.slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    asNavFor:'.'
+    asNavFor:'.slider-item__buttons'
 });
 
-$('.slider-for').slick({
+$('.slider-item__buttons').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     focusOnSelect: true,
-    asNavFor:'.'
+    asNavFor:'.slider'
 });
